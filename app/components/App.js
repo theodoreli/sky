@@ -1,4 +1,13 @@
+import React from 'react'
+
 export let __hotReload = true
 
-console.log('hi')
-console.log('hotter')
+var App = React.createClass({
+    render: function() {
+        return (
+            <div>Hello World</div>
+         ) 
+     }
+})
+
+React.render(<App />, document.getElementById('app'));
